@@ -13,7 +13,7 @@ El primer ejercicio es una página que simula la interfaz de búsqueda de Google
 
 El segundo ejercicio representa una página de búsqueda utilizando el motor de búsqueda "Microsoft Bing". La página tiene un encabezado con enlaces y opciones de inicio de sesión, y una barra de búsqueda con varios iconos para opciones de búsqueda. También contiene una sección de noticias destacadas.
 
-![Microsoft Bing Search Page](./iamgenes/2.png)
+![Microsoft Bing Search Page](./imagenes/2.png)
 
 
 ## Ejercicio 3: Página de Inicio de Netflix
