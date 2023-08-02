@@ -1,0 +1,195 @@
+/* Estilos generales del documento */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor principal con dirección de columna */
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado con dirección de fila y espacio entre elementos */
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+/* Elementos del encabezado izquierdo y derecho con dirección de fila */
+#header-left,
+#header-right {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos de contenido del encabezado */
+.header-item {
+  margin: 0.5em;
+  font-size: medium;
+}
+
+/* Estilos para imágenes dentro del contenido del encabezado */
+.header-item > img {
+  margin-top: -0.5em;
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+/* Contenedor de contenido con dirección de columna */
+#content-container {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para imágenes dentro del contenido */
+#content-container > img {
+  width: 25em;
+  margin: 2em 0;
+}
+
+/* Estilos para el cuadro de búsqueda de Google */
+.google-search-box {
+  border: 2px solid #cecdcd;
+  border-radius: 30px;
+  padding: 0.2em 1em;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Estilos para la imagen dentro del cuadro de búsqueda */
+.google-search-box > img {
+  width: 1.5em;
+}
+
+/* Estilos para el texto dentro del cuadro de búsqueda */
+.google-search-input span {
+  color: #a8a7a7;
+}
+
+/* Estilos para imágenes y texto dentro del cuadro de búsqueda */
+.google-search-box img,
+.google-search-input span {
+  padding: 0.2em 0;
+}
+
+/* Estilos para el campo de entrada del cuadro de búsqueda */
+.google-search-input input {
+  width: 300px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Estilos para botones de contenido */
+.content-buttons {
+  margin: 2em 0;
+}
+
+/* Estilos para los botones dentro del contenido */
+.content-buttons > button {
+  border: none;
+  height: 3em;
+  border-radius: 4px;
+  margin: 0.5em;
+  padding: 1em;
+}
+
+/* Estilos para el contenido de traducción */
+.content-trad {
+  display: inherit;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* Estilos para párrafos dentro del contenido de traducción */
+.content-trad > p {
+  margin: -0.1em 0.5em;
+}
+
+/* Estilos para los enlaces dentro del contenido de traducción */
+.content-trad-links {
+  display: flex;
+  justify-content: space-around;
+  width: 10em;
+}
+
+/* Estilos para enlaces dentro del contenido de traducción */
+.content-trad-links > a {
+  text-decoration: none;
+}
+
+/* Estilos para el pie de página */
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos para la sección de país en el pie de página */
+.footer-country {
+  color: #55595f;
+  border-bottom: 2px solid #a6a6a68e;
+  padding: 0.5em 1em;
+}
+
+/* Estilos para el contenido adicional en el pie de página */
+.footer-more-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Estilos para el contenido adicional en el pie de página (izquierda) */
+.footer-more-content-left {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos para enlaces dentro del contenido adicional en el pie de página (izquierda) */
+.footer-more-content-left > a {
+  text-decoration: none;
+  padding: 1em 1em;
+  color: #55595f;
+}
+
+/* Estilos para el contenido adicional en el pie de página (centro) */
+.footer-more-content-center {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos para la imagen dentro del contenido adicional en el pie de página (centro) */
+.footer-more-content-center > img {
+  height: 2em;
+  padding: 0.5em 0.5em 0 0;
+  transform: rotate(-45deg);
+}
+
+/* Estilos para el texto dentro del contenido adicional en el pie de página (centro) */
+.footer-more-content-center > p {
+  color: #55595f;
+}
+
+/* Estilos para el contenido adicional en el pie de página (derecha) */
+.footer-more-content-right {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos para enlaces dentro del contenido adicional en el pie de página (derecha) */
+.footer-more-content-right > a {
+  text-decoration: none;
+  padding: 1em 1em;
+  color: #55595f;
+}

@@ -1,0 +1,126 @@
+/* Estilos generales del cuerpo de la página */
+body {
+	background-color: rgb(36, 36, 36); /* Color de fondo */
+	margin: 0; /* Sin margen */
+	padding: 0; /* Sin relleno */
+	box-shadow: none; /* Sin sombra */
+	font-family: Arial; /* Fuente del texto */
+	overflow-x: hidden; /* Ocultar barras de desplazamiento horizontal */
+}
+
+/* Estilos para el encabezado */
+header {
+	display: flex; /* Mostrar los elementos en una fila */
+	flex-direction: row; /* Orientación horizontal de los elementos */
+	padding: 1.5em 0; /* Espaciado superior e inferior */
+	justify-content: space-between; /* Distribuir los elementos a lo largo del ancho */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+	display: flex; /* Mostrar los elementos en una fila */
+	flex-direction: row; /* Orientación horizontal de los elementos */
+	margin-left: 2em; /* Margen izquierdo de la barra de navegación */
+}
+
+/* Estilos para el logo de Netflix en la barra de navegación */
+nav > img {
+	width: 7em; /* Ancho del logo */
+	height: 2em; /* Altura del logo */
+	margin-right: 3em; /* Margen derecho del logo */
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav > a {
+	text-decoration: none; /* Sin subrayado en los enlaces */
+	color: white; /* Color del texto de los enlaces */
+	margin-top: 0.5em; /* Margen superior de los enlaces */
+	margin-left: 2em; /* Margen izquierdo de los enlaces */
+}
+
+/* Estilos para el contenido del encabezado a la derecha */
+.header-right {
+	display: flex; /* Mostrar los elementos en una fila */
+	flex-direction: row; /* Orientación horizontal de los elementos */
+	justify-content: center; /* Centrar los elementos horizontalmente */
+	margin-right: 2em; /* Margen derecho del contenido */
+}
+
+/* Estilos para los iconos en el contenido del encabezado a la derecha */
+.header-right > span {
+	color: white; /* Color del texto de los iconos */
+	font-weight: 600; /* Grosor de la fuente de los iconos */
+	margin: 0.25em 0.50em; /* Margen entre los iconos */
+}
+
+/* Estilos para la imagen de usuario en el contenido del encabezado a la derecha */
+.header-right > img {
+	margin-left: 1em; /* Margen izquierdo de la imagen de usuario */
+	width: 2.5em; /* Ancho de la imagen de usuario */
+	height: 2.5em; /* Altura de la imagen de usuario */
+	border-radius: 4px; /* Radio de borde de la imagen de usuario */
+}
+
+/* Estilos para el contenido principal */
+.content {
+	height: 100vh; /* Altura del contenido principal para ocupar toda la ventana visible */
+	margin: 0 2em; /* Margen en los lados izquierdo y derecho del contenido */
+}
+
+/* Estilos para el contenedor de elementos con títulos e imágenes */
+.container {
+	height: 50%; /* Altura del contenedor, el 50% del contenedor principal */
+	margin: 0; /* Sin margen */
+	display: grid; /* Mostrar los elementos en una cuadrícula */
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Columnas de la cuadrícula */
+	grid-template-rows: 0.7fr 1.7fr 0.7fr 1.7fr 0.7fr 1.7fr; /* Filas de la cuadrícula */
+	gap: 0.2em 0.5em; /* Espaciado entre las celdas de la cuadrícula */
+	grid-auto-flow: row; /* Ajustar automáticamente el flujo de los elementos */
+	grid-template-areas:
+		/* Definir áreas de la cuadrícula */
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . .";
+}
+
+/* Estilos para todos los elementos dentro del contenedor */
+.container * {
+	position: relative; /* Posición relativa para el contenido interno */
+}
+
+/* Estilos para los títulos en la primera, séptima y decimotercera posición del contenedor */
+.container > div:nth-child(1),
+.container > div:nth-child(7),
+.container > div:nth-child(13) {
+	color: white; /* Color del texto de los títulos */
+	font-family: NetflixSans-Bold, Arial, Helvetica, sans-serif; /* Fuente del texto */
+	font-size: x-large; /* Tamaño de fuente grande */
+	display: flex; /* Mostrar los elementos en una fila */
+	align-items: flex-end; /* Alinear los elementos verticalmente en la parte inferior */
+	margin-bottom: 1em; /* Margen inferior de los títulos */
+}
+
+/* Estilos para el primer elemento del contenedor */
+.container > div:nth-of-type(1) {
+	grid-area: 1 / 1 / span 1 / span 5; /* Definir el área de la cuadrícula para el primer elemento */
+}
+
+/* Estilos para el séptimo elemento del contenedor */
+.container > div:nth-of-type(7) {
+	grid-area: 3 / 1 / span 1 / span 5; /* Definir el área de la cuadrícula para el séptimo elemento */
+}
+
+/* Estilos para el decimotercer elemento del contenedor */
+.container > div:nth-of-type(13) {
+	grid-area: 5 / 1 / span 1 / span 5; /* Definir el área de la cuadrícula para el decimotercer elemento */
+}
+
+/* Estilos para las imágenes dentro del contenedor */
+.container > div > img {
+	border-radius: 6px; /* Radio de borde para las imágenes */
+	width: 95%; /* Ajusta el tamaño de la imagen al 95% */
+	/* Esto hará que las imágenes tengan un tamaño reducido dentro del contenedor */
+}

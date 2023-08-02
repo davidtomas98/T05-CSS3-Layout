@@ -1,0 +1,303 @@
+/* Estilos generales del documento */
+body {
+  background-image: url("../assets/tokio.jpg"); /* Fondo de pantalla */
+  margin: 0;
+  padding: 0;
+  font-family: Arial; /* Fuente predeterminada */
+}
+
+/* Estilos del encabezado */
+.header {
+  padding: 1em 4em; /* Espaciado interno del encabezado */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); /* Degradado de fondo */
+  height: 25px;
+}
+
+/* Estilos del contenido izquierdo del encabezado */
+.header-left {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos del título y el logo en el contenido izquierdo del encabezado */
+.header-left-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left-title > img {
+  height: 2em; /* Tamaño del logo */
+}
+
+.header-left-title > h1 {
+  color: white; /* Color del título */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente del título */
+  margin: -0.05em 0.5em 0.5em; /* Espaciado del título */
+  font-weight: 500; /* Grosor del título */
+}
+
+/* Estilos del contenido derecho del encabezado */
+.header-left-content {
+  margin-left: 5em; /* Espaciado a la izquierda del contenido */
+  margin-top: 0.5em; /* Espaciado arriba del contenido */
+}
+
+/* Estilos para los enlaces en el contenido izquierdo y derecho del encabezado */
+.header-left-content > a,
+.header-right > a,
+.header-right-container > a {
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  color: white; /* Color del texto de los enlaces */
+  font-size: medium; /* Tamaño del texto de los enlaces */
+}
+
+/* Estilos para los enlaces del contenido izquierdo del encabezado */
+.header-left-content > a {
+  margin-right: 2em; /* Espaciado entre enlaces */
+}
+
+/* Estilos para el último enlace del contenido izquierdo del encabezado */
+.header-left-content > a:last-child {
+  height: 0.2em; /* Altura del último enlace */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilos para el contenido derecho del encabezado */
+.header-right {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilos para los enlaces en el contenido derecho del encabezado */
+.header-right > a {
+  margin-right: 2em; /* Espaciado entre enlaces */
+  margin-top: 0.5em; /* Espaciado arriba de los enlaces */
+}
+
+/* Estilos para el contenedor de enlaces y el icono en el contenido derecho del encabezado */
+.header-right-container {
+  margin-top: 0.5em; /* Espaciado arriba del contenedor */
+  margin-right: 1em; /* Espaciado a la derecha del contenedor */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Estilos para los enlaces en el contenedor del contenido derecho del encabezado */
+.header-right-container > a {
+  margin-right: 0.5em; /* Espaciado entre enlaces */
+}
+
+/* Estilos para el icono en el contenedor del contenido derecho del encabezado */
+.header-right-container > span {
+  font-size: 1.5em; /* Tamaño del icono */
+  padding: 0.2em; /* Espaciado dentro del icono */
+  border-radius: 50%; /* Borde redondeado */
+}
+
+/* Estilos para el primer icono en el contenido derecho del encabezado */
+.header-right-container:nth-of-type(1) > span {
+  background-color: white; /* Color de fondo del icono */
+  color: black; /* Color del icono */
+}
+
+/* Estilos para el segundo icono en el contenido derecho del encabezado */
+.header-right-container:nth-of-type(2) > span {
+  border: 2px solid rgba(255, 255, 255, 0.681); /* Borde del icono */
+  color: white; /* Color del icono */
+}
+
+/* Estilos para el tercer icono en el contenido derecho del encabezado */
+.header-right > span {
+  color: white; /* Color del icono */
+  font-size: 2em; /* Tamaño del icono */
+}
+
+/* Estilos para el cuadro de búsqueda */
+.search {
+  margin-top: 15em; /* Espaciado arriba del cuadro de búsqueda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el cuadro de búsqueda de Bing */
+.bing-search {
+  background-color: white; /* Color de fondo del cuadro de búsqueda */
+  border-radius: 12px; /* Borde redondeado del cuadro de búsqueda */
+  padding: 1em; /* Espaciado dentro del cuadro de búsqueda */
+  width: 500px; /* Ancho del cuadro de búsqueda */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Estilos para los iconos de opciones de búsqueda en el cuadro de búsqueda */
+.bing-search-options > span {
+  color: #4b8ba8; /* Color del icono de opciones */
+  font-size: 1.5em; /* Tamaño del icono de opciones */
+  font-weight: 800; /* Grosor del icono de opciones */
+}
+
+/* Estilos para el campo de entrada del cuadro de búsqueda */
+.bing-search-input input {
+  width: 300px; /* Ancho del campo de entrada */
+  border: none; /* Sin borde en el campo de entrada */
+  outline: none; /* Sin borde de enfoque en el campo de entrada */
+  font-size: 16px; /* Tamaño del texto del campo de entrada */
+}
+
+/* Estilos para las noticias */
+.news {
+  display: flex;
+  flex-direction: column;
+  padding: 4em; /* Espaciado dentro del contenedor de noticias */
+  margin-top: 15em; /* Espaciado arriba del contenedor de noticias */
+}
+
+/* Estilos para los botones e información */
+.buttons-and-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Estilos para los botones de la izquierda y la derecha */
+.buttons-and-info-left > button,
+.buttons-and-info-right > button {
+  border: none; /* Sin borde en los botones */
+  box-shadow: none; /* Sin sombra en los botones */
+  text-align: center; /* Alineación del texto en los botones */
+  color: white; /* Color del texto de los botones */
+  border-radius: 4px; /* Borde redondeado de los botones */
+  background-color: rgba(0, 0, 0, 0.692); /* Color de fondo de los botones */
+  padding: 0.5em; /* Espaciado dentro de los botones */
+}
+
+/* Estilos para los botones al pasar el cursor */
+.buttons-and-info-left > button:hover,
+.buttons-and-info-right > button:hover {
+  background-color: rgb(0, 0, 0); /* Color de fondo al pasar el cursor sobre los botones */
+  color: rgba(255, 255, 255, 0.741); /* Color del texto al pasar el cursor sobre los botones */
+  transition: 1s; /* Duración de la transición al pasar el cursor sobre los botones */
+}
+
+/* Estilos para el contenedor de botones de la derecha */
+.buttons-and-info-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em; /* Espaciado a la izquierda del contenedor de botones */
+  opacity: 0.; /* Menor opacidad */
+}
+
+/* Estilos para los botones dentro del contenedor de botones de la derecha */
+.buttons-and-info-right > button {
+  margin: 0 0.25em; /* Espaciado entre los botones */
+}
+
+/* Estilos para el primer botón dentro del contenedor de botones de la derecha */
+.buttons-and-info-right > button:first-child {
+  display: flex;
+  flex-direction: row; /* Dirección del contenido del botón */
+  text-align: center; /* Alineación del texto dentro del botón */
+  opacity: 0.8; /* Menor opacidad */
+}
+
+/* Estilos para el boletín de noticias */
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* Estilos para el contenido del boletín de noticias */
+.newsletter-content {
+  width: 20em; /* Ancho del contenido del boletín */
+  height: 15em; /* Altura del contenido del boletín */
+  border-radius: 6px; /* Borde redondeado del contenido del boletín */
+  background-size: cover; /* Tamaño de la imagen de fondo */
+  background-position: center; /* Posición de la imagen de fondo */
+  margin: 0.5em; /* Espaciado entre elementos del boletín */
+  padding: 1em; /* Espaciado dentro del contenido del boletín */
+}
+
+/* Estilos para el primer contenido del boletín de noticias */
+.newsletter-content:nth-of-type(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado de fondo */
+    url("https://phantom-marca.unidadeditorial.es/b05214c6ac5f7af984c404f8e5a04c9d/resize/660/f/webp/assets/multimedia/imagenes/2023/08/02/16909709672694.jpg"); /* Imagen de fondo */
+  border-radius: 0px 6px 6px 0; /* Borde redondeado del primer contenido */
+}
+
+/* Estilos para el segundo contenido del boletín de noticias */
+.newsletter-content:nth-of-type(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado de fondo */
+    url("https://static.eldiario.es/clip/1f1c2aac-30a8-40d5-aab7-33ab117137e4_16-9-discover-aspect-ratio_default_0.webp"); /* Imagen de fondo */
+}
+
+/* Estilos para el tercer contenido del boletín de noticias */
+.newsletter-content:nth-of-type(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado de fondo */
+    url("https://www.lavanguardia.com/files/image_948_465/files/fp/uploads/2023/08/01/64c8ca8a657d1.r_d.403-314.png"); /* Imagen de fondo */
+}
+
+/* Estilos para el cuarto contenido del boletín de noticias */
+.newsletter-content:nth-of-type(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado de fondo */
+    url("https://fotografias.lasexta.com/clipping/cmsimages01/2021/06/22/E7584E64-1570-494C-836D-49C7CFD8886C/60.jpg"); /* Imagen de fondo */
+}
+
+/* Estilos para el quinto contenido del boletín de noticias */
+.newsletter-content:nth-of-type(5) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Degradado de fondo */
+    url("https://estaticos-cdn.sport.es/clip/7bb3e453-b7b7-46a6-b351-7b77b353e050_media-libre-aspect-ratio_default_0.jpg"); /* Imagen de fondo */
+  border-radius: 6px 0 0 6px; /* Borde redondeado del quinto contenido */
+}
+
+/* Estilos para el título del contenido del boletín de noticias */
+.newsletter-content > h2 {
+  color: white; /* Color del título */
+  font-size: x-large; /* Tamaño del título */
+}
+
+/* Estilos para el párrafo del contenido del boletín de noticias */
+.newsletter-content > p {
+  color: white; /* Color del párrafo */
+  font-size: smaller; /* Tamaño del párrafo */
+}
+
+/* Estilos para el pie de página */
+.footer {
+  position: fixed; /* Posición fija en el pie de página */
+  bottom: 0; /* Margen inferior del pie de página */
+  width: 100%; /* Ancho del pie de página */
+  height: 50px; /* Altura del pie de página */
+  background-color: #2c2b2a; /* Color de fondo del pie de página */
+  padding: 0.5em 0; /* Espaciado dentro del pie de página */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Alineación del contenido en el pie de página */
+}
+
+/* Estilos para el contenido izquierdo del pie de página */
+.footer-left {
+  display: flex;
+  flex-direction: row;
+  padding-left: 4em; /* Espaciado a la izquierda del contenido */
+}
+
+/* Estilos para el contenido derecho del pie de página */
+.footer-right {
+  padding-right: 4em; /* Espaciado a la derecha del contenido */
+}
+
+/* Estilos para los enlaces en el contenido izquierdo y derecho del pie de página */
+.footer-left > a,
+.footer-right > p {
+  color: grey; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  margin: 1em 0.5em 0 0.5em; /* Espaciado entre enlaces */
+}
